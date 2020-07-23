@@ -1,0 +1,30 @@
+{
+  "personalInformation" : {
+    "firstName": "Juanito",
+    "lastName": "Mora",
+    "title": "Mr.",
+    "password": "Quality.12345",
+    "dateOfBirth": {
+      "day": "30",
+      "month": "November",
+      "year": "1995"
+    },
+    "signUpForNewsLetter": true,
+    "receiveSpecialOffers": true
+  },
+  "addressInformation": {
+    "firstName": "Juanito",
+    "lastName": "Mora",
+    "company": "DevCentral",
+    "address": "34 Kimberly Ave, New Haven, CT 06519, United States",
+    "addressLine2": "Apartment 4",
+    "city": "New Haven",
+    "state": "Connecticut",
+    "zipCode": "24519",
+    "country": "United States",
+    "addtionalInfo": "Nothing important",
+    "homePhone": "1-541-754-3010",
+    "mobilePhone": "1-541-754-3010",
+    "addressAlias": "Around the corner"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "baseUrl": "http://automationpractice.com/index.php",
+  "waitForAnimations": true,
+  "vieportWidth": 1000,
+  "vieportHeight": 800,
+  "animationDistanceTreshold": 20,
+  "defaultCommandTimeout": 5000,
+  "execTimeout": 60000,
+  "pageLoadTimeout": 60000,
+  "requestTimeout": 15000,
+  "responseTimeout": 15000,
+  "video": false,
+  "failedOnStatusCode": false,
+  "experimentalSourceRewriting": true
+}
