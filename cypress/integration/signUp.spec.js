@@ -1,8 +1,8 @@
 import HomePage from '../page-objects/pages/HomePage';
-import RegisterPage from '../page-objects/pages/RegisterPage';
+import AuthenticationPage from '../page-objects/pages/AuthenticationPage';
 import AccountCreationPage from '../page-objects/pages/AccountCreationPage';
 
-describe('Register tests', () => {
+describe('Authentication page', () => {
 
   before(function () {
     HomePage.visitHomePage();
@@ -11,8 +11,8 @@ describe('Register tests', () => {
   });
 
   it('should register a new user', function () {
-    RegisterPage.typeEmail(RegisterPage.generateRandomEmail());
-    RegisterPage.clickCreateAccountBtn();
+    AuthenticationPage.typeEmail(AuthenticationPage.generateRandomEmail());
+    AuthenticationPage.clickCreateAccountBtn();
     cy.get('h3').should('contain', 'Your personal information');
     console.log(this.registerInfo.personalInformation);
     AccountCreationPage.selectTitleOption(this.registerInfo.personalInformation.title);

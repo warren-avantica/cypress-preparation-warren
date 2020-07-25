@@ -10,7 +10,22 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add("login", (email, password) => { ... })
+Cypress.Commands.add("loginProg", ({ email, password }) => {
+  const back = 'my-account';
+  const trollEmail = 'asdasdasd';
+  cy.request({
+    method: 'POST',
+    url: 'http://automationpractice.com/index.php?controller=my-account',
+    failOnStatusCode: false,
+    form: true,
+    followRedirect: true,
+    body: {
+      email: email,
+      passwd: password,
+      back: back
+    }
+  })
+});
 //
 //
 // -- This is a child command --

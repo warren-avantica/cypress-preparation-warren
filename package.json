@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open"
+    "cy:open": "npx cypress open",
+    "cy:open-staging": "npx cypress open --env configFile=staging",
+    "cy:open-qa": "npx cypress open --env configFile=qa"
   },
   "keywords": [],
   "author": "",
