@@ -14,7 +14,7 @@ class AuthenticationPage {
     this.emailCreateInput().type(email)
   }
 
-  static login({ email, password }) {
+  static login(email, password) {
     this.emailLoginInput().type(email);
     this.passwordInput().type(password);
     this.submitLoginBtn().click();

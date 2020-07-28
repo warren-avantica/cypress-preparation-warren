@@ -6,7 +6,11 @@
   "scripts": {
     "cy:open": "npx cypress open",
     "cy:open-staging": "npx cypress open --env configFile=staging",
-    "cy:open-qa": "npx cypress open --env configFile=qa"
+    "cy:open-qa": "npx cypress open --env configFile=qa",
+    "cy:run-headless": "npx cypress run",
+    "cy:run-chrome": "npx cypress run --browser chrome",
+    "cy:run-ff": "npx cypress run --browser firefox",
+    "cy:run-record-chrome": "npx cypress run --browser chrome --record"
   },
   "keywords": [],
   "author": "",

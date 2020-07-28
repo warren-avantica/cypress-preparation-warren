@@ -9,7 +9,8 @@
   "pageLoadTimeout": 60000,
   "requestTimeout": 15000,
   "responseTimeout": 15000,
-  "video": false,
+  "video": true,
   "failedOnStatusCode": false,
-  "experimentalSourceRewriting": true
+  "experimentalSourceRewriting": true,
+  "projectId": "e5qvgo"
 }
