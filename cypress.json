@@ -12,5 +12,6 @@
   "video": true,
   "failedOnStatusCode": false,
   "experimentalSourceRewriting": true,
-  "projectId": "e5qvgo"
+  "projectId": "e5qvgo",
+  "watchForFileChanges": false
 }

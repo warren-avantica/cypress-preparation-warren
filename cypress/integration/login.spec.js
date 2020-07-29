@@ -16,9 +16,9 @@ describe('authentication page', () => {
     NavBar.loggedUserMyAccount().invoke('text').should('contain', 'warren');
   });
   
-  //WIP
-  it.skip('should login programmatically', function() {
-    cy.loginProg(this.loginData);
-    cy.visit('/index.php?controller=my-account')
+  it('should login programmatically', function() {
+    cy.loginProg(this.loginData.email, password);
+    cy.visit('/index.php?controller=my-account');
+    NavBar.loggedUserMyAccount().invoke('text').should('contain', 'warren');
   });
 })

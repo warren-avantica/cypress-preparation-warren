@@ -10,19 +10,37 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add("loginProg", ({ email, password }) => {
+Cypress.Commands.add("loginProg", (email, password) => {
   const back = 'my-account';
-  const trollEmail = 'asdasdasd';
   cy.request({
     method: 'POST',
-    url: 'http://automationpractice.com/index.php?controller=my-account',
+    url: 'http://automationpractice.com/index.php?controller=authentication',
     failOnStatusCode: false,
     form: true,
     followRedirect: true,
     body: {
       email: email,
       passwd: password,
-      back: back
+      back: back,
+      SubmitLogin: ''
+    }
+  })
+});
+
+Cypress.Commands.add("addProductToCart", () => {
+  cy.request({
+    method: 'POST',
+    url: 'http://automationpractice.com/index.php?rand=1596062980330',
+    failOnStatusCode: true,
+    form: true,
+    followRedirect: false,
+    body: {
+      controller: 'cart',
+      add: 1,
+      ajax: true,
+      qty: 1,
+      id_product: 1,
+      token: '7469c85ffaabd853c735abd9471dcc29'
     }
   })
 });
